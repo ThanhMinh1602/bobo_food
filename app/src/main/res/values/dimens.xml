@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Padding và Margin chuẩn (Theo quy tắc 8dp) -->
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+
+    <!-- Kích thước các thành phần UI -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_radius">8dp</dimen>
+
+    <!-- Kích thước chữ (Dùng đơn vị sp) -->
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_headline">24sp</dimen>
+</resources>
