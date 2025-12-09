@@ -1,8 +1,9 @@
-package com.example.myapplication
+package com.example.myapplication.ui.onboarding
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.example.myapplication.R
 
 // 🛑 Adapter này phải nhận FragmentActivity (là 'this')
 class OnboardingAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
