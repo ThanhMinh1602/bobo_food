@@ -6,33 +6,75 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="20dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
     tools:context=".ui.auth.LoginActivity">
 
     <include layout="@layout/toolbar_default" />
-
-    <TextView
-        style="@style/TextView.Heading1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/login_title" />
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:boxStrokeColor="@drawable/text_input_stroke_color"
-        app:boxStrokeWidth="1dp"
-        app:boxStrokeWidthFocused="2dp"
-        app:cursorColor="@color/primary_light"
-        app:hintEnabled="false">
-
-        <com.google.android.material.textfield.TextInputEditText
+        android:layout_height="0dp"
+        android:scrollIndicators="none"
+        android:layout_weight="1"
+        >
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:orientation="vertical"
+            >
+            <TextView
+                style="@style/TextView.Heading1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_title" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTextField"
+                android:layout_marginTop="20dp"
+                style="@style/Widget.App.TextField">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextView.Medium400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordTextField"
+                style="@style/Widget.App.TextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:endIconMode="password_toggle"
+                app:endIconDrawable="@drawable/selector_password"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextView.Medium400"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:hint="@string/password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                style="@style/TextView.Primary700"
+                android:text="@string/forgot_password"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btn"
+        style="@style/Widget.App.PrimaryButton"
+        />
 </LinearLayout>
