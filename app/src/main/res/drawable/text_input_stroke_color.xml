@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Màu viền khi focus -->
+    <item
+        android:state_focused="true"
+        android:color="@color/primary_light" />
+    <!-- Màu viền khi chưa focus -->
+    <item
+        android:color="@color/border_default" />
+
+</selector>
