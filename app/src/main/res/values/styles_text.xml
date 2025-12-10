@@ -23,7 +23,13 @@
         <item name="android:fontFamily">@font/poppins_regular</item>
         <item name="android:letterSpacing">-0</item>
     </style>
-
+    <style name="TextView.Medium600" parent="TextView.BaseTextStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingMultiplier">1.7</item>
+        <item name="fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
+        <item name="android:letterSpacing">-0</item>
+    </style>
     <style name="TextView.Primary700" parent="TextView.BaseTextStyle">
         <item name="android:textSize">15sp</item>
         <item name="android:lineSpacingMultiplier">1.7</item>
