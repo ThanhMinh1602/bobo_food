@@ -24,4 +24,9 @@
         <item name="android:textColor">@color/primary_dark</item>
     </style>
 
+    <style name="Widget.App.TextButton">
+        <item name="backgroundColor">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+
 </resources>

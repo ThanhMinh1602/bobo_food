@@ -25,7 +25,7 @@ class LoginActivity : BaseActivity() {
         emailTextField = findViewById(R.id.emailTextField)
         passwordTextField = findViewById(R.id.passwordTextField)
         loginBtn = findViewById(R.id.login_btn)
-        tvForgot = findViewById(R.id.tv_forgot)
+//        tvForgot = findViewById(R.id.tv_forgot)
         tvSignup = findViewById(R.id.tv_signup)
 
         loginBtn.setOnClickListener {
@@ -54,4 +54,10 @@ class LoginActivity : BaseActivity() {
             showToast("Tên đăng nhập hoặc mật khẩu không đúng.")
         }
     }
+
+    private fun onTapForgot(){
+
+    }
+
+    private fun onTapSignup(){}
 }
